@@ -1,0 +1,79 @@
+
+.TContainer {
+  width: 100%;
+  padding: 0.2rem 1.1rem;
+}
+.TContainer h1 {
+  text-align: center;
+  font-family: var(--textTitlefont-family);
+  font-size: var(--textTitleFont);
+  color: var(--secondaryColor);
+}
+.TContainer p {
+  text-align: center;
+  font-family: var(--ParagraphFont-family);
+  font-size: var(--ParagraphFontSize);
+  color: var(--lastColor);
+  margin-bottom: 20px;
+  padding: 0.5rem 0;
+}
+.cardsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* cards */
+.tripcard {
+  width: 400px;
+  box-shadow: 0 0 10px black;
+  border-radius:13px;
+  padding: 1rem .8rem;
+  cursor: pointer;
+  text-align: start;
+}
+.ImgContainerClass{
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border-radius:13px;
+}
+.ImgContainerClass img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius:13px;
+  transition: 0.6s ease-in-out;
+}
+.tripcard img:hover {
+  transform: scale(1.3);
+}
+.cardtextContainer{
+  padding: 0.1rem 0.2rem;
+  width: 100%;
+  height: 40%;
+}
+.tripcard h1{
+    text-align: center;
+    font-family: var(--textTitlefont-family);
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+.tripcard h3{
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 600px) {
+  .tripcard {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px black;
+    border-radius:13px;
+  }
+  .cardsContainer {
+   gap: 0.6rem;
+  }
+  .tripcard {
+    width:100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,72 @@
+
+.Contact {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1.2rem;
+}
+.contactInformation {
+  width: 600px;
+  line-height: 2rem;  
+}
+.contactInformation h1 {
+  font-size: var(--ParagraphFontSize);
+  font-weight: 800;
+}
+.contactInformation ul {
+  list-style: none;
+}
+.contactInformation ul li h4 {
+    font-weight: 600;
+}
+/* contact form */
+.contactForm{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    background-color: white;
+    padding: 1.3rem;
+    background-color: whitesmoke;
+}
+form h1{
+    text-align: center;
+    font-size: var(--ParagraphFontSize);
+    padding-bottom: 0.5rem;
+    font-weight: 800;
+}
+Form input{
+ width: 70%;
+ font-size: 1.1rem;
+ outline: transparent;
+}
+input[type="submit"]{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    border: none;
+    outline: transparent;
+    padding: 0.4rem;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .contactInformation {
+        width: 100%;
+    }
+    .contactForm{
+        width: 100%;
+    }
+}

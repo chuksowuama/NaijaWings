@@ -1,0 +1,16 @@
+.titleContainer{
+margin: 0;
+padding-top: 0.5rem;
+}
+.Headerclas{
+    text-align: center;
+    font-family: var(--textTitlefont-family);
+    font-size: var(--textTitleFont);
+    color: var(--secondaryColor);
+}
+.subheaderclass{
+    text-align: center;
+    font-family: var(--ParagraphFont-family);
+    font-size: var(--ParagraphFontSize);
+    color: var(--lastColor);
+}

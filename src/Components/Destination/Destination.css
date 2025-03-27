@@ -1,0 +1,110 @@
+.DContainer {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  height: 190vh;
+}
+.DContainer h1 {
+  text-align: center;
+  font-family: var(--textTitlefont-family);
+  font-size: var(--textTitleFont);
+  color: var(--secondaryColor);
+}
+.DContainer p {
+  text-align: center;
+  font-family: var(--ParagraphFont-family);
+  font-size: var(--ParagraphFontSize);
+  color: var(--lastColor);
+  margin-bottom: 20px;
+  padding: 0.5rem 0;
+}
+.contentContainer{
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contentContainer.two{
+}
+/* destText container */
+.destText {
+  width: 40%;
+}
+.destText.reverse {
+  order: 1;
+}
+.destText h1 {
+  padding: 0.9rem 0;
+  font-weight: 900;
+  font-family: var(--textTitlefont-family);
+}
+.destText h3 {
+  font-family: var(--ParagraphFont-family);
+  color: var(--lastColor);
+  text-align: center;
+  font-weight: 900;
+}
+.destText h2 {
+  font-family: var(--ParagraphFont-family);
+  color: var(--lastColor);
+  font-size: var(--ParagraphFontSize);
+  line-height: 2.1rem;
+}
+.destImg {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  gap: 5px;
+  height: 450px;
+}
+.destImg.reverse {
+  flex-direction: row-reverse;
+}
+.image {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 6px black;
+}
+.image:nth-child(1) {
+  margin-top: 40px;
+  transform: scale(1.1, 1);
+}
+@media screen and (max-width: 600px) {
+  .DContainer {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    height: 400vh;
+  }
+  .contentContainer{
+    height: 190vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .contentContainer.two{
+    flex-direction: column;
+  }
+  .destText{
+    width: 100%;
+  }
+  .destText h2{
+    font-size:var(--ParagraphFontSize);
+  }
+  .destImg{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .destImg.reverse{
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .image:nth-child(1) {
+    margin-top: 40px;
+    transform: scale(1);
+  }
+}

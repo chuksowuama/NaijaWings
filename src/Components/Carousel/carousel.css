@@ -1,0 +1,59 @@
+:root {
+  --logofont-family: "Bebas Neue", serif;
+  --textTitlefont-family: "Merriweather", serif;
+  --ParagraphFont-family: "Poppins", serif;
+  --textTitleFont: 1.9rem;
+  --ParagraphFontSize: 1.2rem;
+  --primaryColor: #fff;
+  --secondaryColor: darkgreen;
+  --buttonTextColor: #fff;
+  --buttonbgColor: darkgreen;
+  --lastColor: #222;
+}
+.SliderContainer::before{
+    content: "";
+    height: 100%;
+    box-shadow: 2px 7px 10px black;
+}
+.Cardscontainer {
+  width: 100%;
+  height: 500px;
+  position: relative;
+   padding: 1rem 0.8rem;;
+   overflow: hidden;
+}
+.wrapper {
+  width: 150%;
+  height: 100%;
+  display: flex;
+  gap: 0.9rem;
+  line-height: 2rem;
+  overflow: hidden;
+  padding: 1rem 0.8rem;
+}
+.carouselCard {
+  width: 400px;
+  height: 450px;
+  padding: 1rem 0.8rem;
+  box-shadow: 0 0 10px var(--lastColor);
+  transition: 0.7s ease-in-out;
+  border-radius: 13px;
+  text-align: center;
+}
+.Cardimgcontainer {
+  width: 100%;
+  height: 350px;
+}
+.Cardimgcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 13px 13px 0 0;
+}
+.carouselCard h1{
+    color: var(--lastColor);
+    font-size: var(--textTitleFont);
+}
+.carouselCard p{
+    color: var(--secondaryColor);
+}

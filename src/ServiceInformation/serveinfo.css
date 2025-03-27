@@ -1,0 +1,40 @@
+:root {
+    --logofont-family: "Bebas Neue", serif;
+    --textTitlefont-family: "Merriweather", serif;
+    --ParagraphFont-family: "Poppins", serif;
+    --textTitleFont: 1.9rem;
+    --ParagraphFontSize: 1.2rem;
+    --primaryColor: #fff;
+    --secondaryColor: darkgreen;
+    --buttonTextColor: #fff;
+    --buttonbgColor: darkgreen;
+    --lastColor: #222;
+}
+.Servicecontainer{
+    padding: 1rem 1.2rem;
+}
+.header{
+    text-align: center;
+    color: var(--secondaryColor);
+    line-height: 2rem;
+}
+.Tourpackages ul{
+    list-style: none;
+    font-size: var(--ParagraphFontSize);
+}
+.Tourservices ul{
+    list-style: none;
+    font-size: var(--ParagraphFontSize);
+}
+.customizedTours ul{
+    list-style: none;
+    font-size: var(--ParagraphFontSize);
+}
+.AdditionalServices ul{
+    list-style: none;
+    font-size: var(--ParagraphFontSize);
+}
+.whyChooseUs ul{
+    list-style: none;
+    font-size: var(--ParagraphFontSize);
+}

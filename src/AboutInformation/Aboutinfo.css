@@ -1,0 +1,154 @@
+
+.AboutContainer {
+  padding: 1rem 1.2rem;
+}
+
+.aboutUs {
+  text-align: center;
+}
+
+.History p {
+  text-align: start;
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+.ourMission {
+  padding: 1.2rem 0;
+}
+.ourMission h1 {
+  text-align: center;
+  color: var(--secondaryColor);
+  line-height: 2rem;
+}
+/* OUR MISSION */
+.ourMission h3 {
+  font-size: var(--ParagraphFont-family);
+  text-align: center;
+  line-height: 2rem;
+}
+.ourMission p {
+  text-align: start;
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+.ourMission ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+.ourMission ul li {
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+
+/* OUR VALUES */
+.Values {
+  padding: 1.2rem 0;
+}
+.Values h1 {
+  text-align: center;
+  color: var(--secondaryColor);
+  line-height: 2rem;
+}
+.Values h3 {
+  text-align: start;
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+.Values ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+.Values ul li {
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+
+/* OUR TEAM SECTION */
+.Teamcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.3rem 0 0 0;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.Teamcards .CardsContain {
+  width: 300px;
+  border-radius: 50% 50% 50% 50%;
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 0 10px black;
+  padding: 2.2rem;
+  cursor: pointer;
+  gap: 0.8rem;
+  text-align: start;
+  transition: 0.4s ease-in-out;
+}
+.CardsContain:hover {
+  transform: translateY(-20px);
+}
+.Teamcards .CardsContain h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+.Teamcards .CardsContain h3 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.CardsContainer img {
+  transform: scale(1);
+}
+.CardsContain .CardimgClass {
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 50% 35px 35px;
+}
+
+/* Our Destination Section */
+.Ourdestination {
+  padding: 1.2rem 0;
+}
+.Ourdestination h1 {
+  text-align: center;
+  color: var(--secondaryColor);
+  line-height: 2rem;
+  padding: 1.2rem 0;
+}
+.Ourdestination h3 {
+  text-align: start;
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+.Ourdestination ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+.Ourdestination ul li {
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+
+/* OUR tours section */
+.Ourtours {
+  padding: 1.2rem 0;
+}
+.Ourtours h1 {
+  text-align: center;
+  color: var(--secondaryColor);
+  line-height: 2rem;
+  padding: 1.2rem 0;
+}
+.Ourtours h3 {
+  text-align: start;
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
+.Ourtours ul {
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+  list-style: none;
+}
+.Ourtours ul li {
+  font-size: var(--ParagraphFontSize);
+  line-height: 2rem;
+}
