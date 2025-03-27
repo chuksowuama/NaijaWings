@@ -23,9 +23,9 @@ export default[
          URL:"/Contact",
          navClass:"navClass"
     },
-    {
-        title:"SignUp",
-         URL:"/Signup",
-         navClass:"navClass-mobile"
-    },
+    // {
+    //     title:"SignUp",
+    //      URL:"/Signup",
+    //      navClass:"navClass-mobile"
+    // },
 ]

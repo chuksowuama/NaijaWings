@@ -1,5 +1,6 @@
 import React from "react";
 import "./Destination.css";
+import { Link } from "react-router-dom";
 import img4 from "../../assets/EmirPalace.jpg";
 import img5 from "../../assets/EmirPalace.jpg";
 
@@ -12,6 +13,9 @@ const DestinationData = (props) => {
           <h1>{props.header}</h1>
           <h3>{props.subheader}</h3>
           <h2>{props.paragraphText}</h2>
+           <Link to={"/Bookings"}>
+           <button className={props.cta}>{props.callToaction}</button>
+           </Link>
         </div>
         <div className={props.destImgClass}>
           <img src={props.image1} alt="" className={props.imageClass}/>

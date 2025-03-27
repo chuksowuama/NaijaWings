@@ -1,0 +1,31 @@
+.scroll{
+    /* position: fixed; */
+    z-index: 999;
+    display: inline-block;
+    padding: 0.9rem;
+    position: fixed;
+    bottom: 10%;
+    right: 30px;
+    animation: scroller 1s ease-in-out infinite;
+    animation-direction: alternate;
+}
+.hidebtn{
+    display: none;
+}
+.scroll i{
+    color: green;
+    font-size: 2rem;
+    cursor: pointer;
+    text-shadow: 0 0 8px black;
+}
+.scroll i:hover{
+    font-size: 1.9rem;
+}
+@keyframes scroller {
+    from{
+      bottom: 10%;
+    }
+    to{
+      bottom: 15%;
+    }
+}

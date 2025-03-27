@@ -1,0 +1,47 @@
+:root {
+  --logofont-family: "Bebas Neue", serif;
+  --textTitlefont-family: "Merriweather", serif;
+  --ParagraphFont-family: "Poppins", serif;
+  --textTitleFont: 1.9rem;
+  --ParagraphFontSize: 1.2rem;
+  --primaryColor: #fff;
+  --secondaryColor: darkgreen;
+  --buttonTextColor: #fff;
+  --buttonbgColor: darkgreen;
+  --lastColor: #222;
+}
+.formContainer {
+  position: fixed;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  text-align: center;
+  background-color:var(--primaryColor);
+  padding: 2.2rem 1.2rem;
+  z-index: 77;
+}
+.formContainer .header{
+    padding: 1rem;
+}
+.formContainer form {
+  width: 80%;
+  justify-self: center;
+  background-color: var(--primaryColor);
+}
+.formContainer input {
+  width: 100%;
+}
+.signupCondition{
+    display: flex;
+    white-space: nowrap;
+    gap: 0.4rem;
+}
+.cancel{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: var(--secondaryColor);
+    cursor: pointer;
+}

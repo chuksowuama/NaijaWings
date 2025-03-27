@@ -1,17 +1,29 @@
 import React, { useState } from "react";
 import Menulist from "./Menulist";
-import logo from "./L4bpu201.svg";
 import "./navCss.css";
 import { Link } from "react-router-dom";
+import SignupForm from "../Signupmodal/SignupForm";
 
 const Navbar = () => {
   const[menuIcon,setMenuIcon]=useState(true)
-  const[displaymenulist,setdisplaymenulist]=useState("")
+  const[showlogin,setshowlogin]=useState(false)
+
 function handleMenuicon(){
   setMenuIcon(!menuIcon)
 }
+function handlesignup(){
+ setshowlogin(true)
+ console.log(showlogin)
+}
+function closesignup(){
+  setshowlogin(false)
+}
 
   return (
+    <>
+    {
+      showlogin? <SignupForm onclicks={closesignup}/>:<></>
+    }
     <nav>
       <div className="logo">
         <h1>Naijawings</h1>
@@ -33,10 +45,11 @@ function handleMenuicon(){
                 </li>
               ))
             : null}
-            <button>SignUp</button>
+            <button onClick={handlesignup}>SignUp</button>
         </ul>
       </div>
     </nav>
+    </>
   );
 };
 

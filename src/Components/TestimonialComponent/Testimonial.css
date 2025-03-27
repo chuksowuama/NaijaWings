@@ -1,0 +1,43 @@
+:root {
+  --logofont-family: "Bebas Neue", serif;
+  --textTitlefont-family: "Merriweather", serif;
+  --ParagraphFont-family: "Poppins", serif;
+  --textTitleFont: 1.9rem;
+  --ParagraphFontSize: 1.2rem;
+  --primaryColor: #fff;
+  --secondaryColor: darkgreen;
+  --buttonTextColor: #fff;
+  --buttonbgColor: darkgreen;
+  --lastColor: #222;
+}
+.TestimonialContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+.testimonialcont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 0.5rem 0.7rem;
+  align-items: center;
+}
+.testimonialcont img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  z-index: 8;
+  box-shadow: 0 0 10px black;
+}
+.testDetails {
+  width: 100%;
+  margin-top: 60px;
+  background: var(--lastColor);
+  color: var(--primaryColor);
+  text-align: center;
+  padding: 2.4rem 0;
+  box-shadow: 0 0 5px black;
+}

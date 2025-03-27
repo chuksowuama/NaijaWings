@@ -13,7 +13,7 @@ const Destination = () => {
         <h1>POPULAR DESTINATION</h1>
         <p>Discover the most sought after destination</p>
         <DestinationData
-          contentContainer="contentContainer"
+          contentContainer="contentContainer one"
           destTextClass="destText"
           header="Kajuru Castle"
           subheadclass="subhead"

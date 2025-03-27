@@ -1,40 +1,247 @@
 :root {
-    --logofont-family: "Bebas Neue", serif;
-    --textTitlefont-family: "Merriweather", serif;
-    --ParagraphFont-family: "Poppins", serif;
-    --textTitleFont: 1.9rem;
-    --ParagraphFontSize: 1.2rem;
-    --primaryColor: #fff;
-    --secondaryColor: darkgreen;
-    --buttonTextColor: #fff;
-    --buttonbgColor: darkgreen;
-    --lastColor: #222;
+  --logofont-family: "Bebas Neue", serif;
+  --textTitlefont-family: "Merriweather", serif;
+  --ParagraphFont-family: "Poppins", serif;
+  --textTitleFont: 1.9rem;
+  --ParagraphFontSize: 1.2rem;
+  --primaryColor: #fff;
+  --secondaryColor: darkgreen;
+  --buttonTextColor: #fff;
+  --buttonbgColor: darkgreen;
+  --lastColor: #222;
 }
-.Servicecontainer{
-    padding: 1rem 1.2rem;
+.Servicecontainer {
+  padding: 1rem 1.2rem;
 }
-.header{
+.ServicecontentContainer {
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header {
+  text-align: center;
+  color: var(--secondaryColor);
+  line-height: 2rem;
+  font-size: var(--textTitleFont);
+  text-transform: uppercase;
+}
+.ServicecontentContainer.one {
+}
+.ServicecontentContainer.one .destImg .image {
+  border: 2px solid black;
+  width: 80%;
+}
+
+.ServicecontentContainer.one .destImg .image:nth-child(2) {
+  margin-top: 40px;
+  transform: scale(1.1, 1);
+  display: none;
+  width: 100%;
+}
+
+/* .image {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 6px black;
+}
+.image:nth-child(1) {
+  margin-top: 40px;
+  transform: scale(1.1, 1);
+} */
+
+/* TourPackages section */
+.Tourpackages ul {
+  list-style: none;
+  font-size: var(--ParagraphFontSize);
+}
+
+/* TourServices section */
+.Tourservices {
+  margin: 0.7rem 0;
+}
+.Tourservices {
+  padding: 1.2rem 0;
+}
+.Tourservices ul {
+  list-style: none;
+  font-size: var(--ParagraphFontSize);
+}
+.Tourservices button {
+  text-align: center;
+  margin: auto;
+}
+
+/* CustomizedTours section  */
+.ServicecontentContainer.two {
+  flex-direction: row-reverse;
+}
+.ServicecontentContainer.two .destImg .image {
+  border: 2px solid black;
+  width: 80%;
+}
+.ServicecontentContainer.two .destImg .image:nth-child(2) {
+  margin-top: 40px;
+  transform: scale(1.1, 1);
+  display: none;
+  width: 100%;
+}
+.customizedTours {
+  color: var(--primaryColor);
+  text-align: right;
+}
+.customizedTours h1 {
+  color: var(--lastColor);
+  text-align: center;
+}
+.customizedTours ul {
+  list-style: none;
+  text-align: left;
+  font-size: var(--ParagraphFontSize);
+}
+/* Additional service section */
+.AdditionalServices {
+  background-color: #222;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  margin: 0.9rem 0;
+  line-height: 3rem;
+}
+.AdditionalServices ul {
+  list-style: none;
+  font-size: var(--ParagraphFontSize);
+}
+.AdditionalServices button{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+/* Why choose us Cards */
+.whyChooseUs ul {
+  list-style: none;
+  font-size: var(--ParagraphFontSize);
+}
+
+.whyChooseUs {
+  width: 100%;
+}
+.whyChooseUs h1 {
+  padding: 1.1rem;
+}
+.whyChooseUs .subheader {
+  color: var(--lastColor);
+  font-size: 1.3rem;
+  text-align: center;
+}
+.whyContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.3rem;
+}
+.whyCard {
+  width: 400px;
+  box-shadow: 0 0 10px black;
+  border-radius: 13px;
+  padding: 5 0.8rem;
+  cursor: pointer;
+  text-align: start;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  transition: 0.6s ease-in-out;
+  cursor: default;
+}
+.whyCard h1 {
+  text-align: center;
+  font-family: var(--textTitlefont-family);
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+.whyCard h3 {
+  font-size: 1.6rem;
+  padding: 1.1rem 0.6rem;
+  text-align: center;
+}
+.whyCard:hover {
+  background-color: var(--lastColor);
+}
+/* 
+  Testimonial section */
+.Testimonial {
+  padding: 2.3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Testimonial h1 {
+  padding: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .PopularLoactions {
+    height: 110vh;
+  }
+  /* service packages mobile section */
+  .Tourpackages {
+    height: 150vh;
+  }
+  .ServicecontentContainer.one {
+    flex-direction: column;
+  }
+  .ServicecontentContainer.one .destImg .image {
+    width: 100%;
+  }
+  /* Tour services mobile section*/
+  .Tourservices {
+    height: 150vh;
+  }
+  .ServicecontentContainer {
+    flex-direction: column;
+  }
+  /* customized Tours mobile section */
+  .customizedTours {
+    height: 100vh;
+  }
+  .ServicecontentContainer.two {
+    flex-direction: column;
+  }
+  .ServicecontentContainer.two .destImg .image {
+    width: 100%;
+  }
+  /* Additional service mobile section */
+  .AdditionalServices {
+    padding: 1.2rem;
+    text-align: start;
+    line-height: 1.3rem;
+  }
+  .AdditionalServices .header {
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+  }
+  .AdditionalServices ul {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+
+  .whyChooseUs {
+    width: 100%;
+  }
+  .whyChooseUs h1 {
+    padding: 1.1rem;
+  }
+  .whyChooseUs .subheader {
+    color: var(--lastColor);
+    font-size: 1.1rem;
     text-align: center;
-    color: var(--secondaryColor);
-    line-height: 2rem;
-}
-.Tourpackages ul{
-    list-style: none;
-    font-size: var(--ParagraphFontSize);
-}
-.Tourservices ul{
-    list-style: none;
-    font-size: var(--ParagraphFontSize);
-}
-.customizedTours ul{
-    list-style: none;
-    font-size: var(--ParagraphFontSize);
-}
-.AdditionalServices ul{
-    list-style: none;
-    font-size: var(--ParagraphFontSize);
-}
-.whyChooseUs ul{
-    list-style: none;
-    font-size: var(--ParagraphFontSize);
+  }
+  .whyContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.8rem;
+  }
 }

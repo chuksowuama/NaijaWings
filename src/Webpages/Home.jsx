@@ -5,6 +5,8 @@ import Asorock from "../assets/pexels-akoonie-21715785.jpg"
 import Destination from "../Components/Destination/Destination";
 import Trip from "../Components/RecentTrip/Trip";
 import Footer from "../Components/FooterComponent/Footer";
+import Homeinfo from "../Homeinformation/Homeinfo";
+import ScrollTop from "../Scrolltotop/ScrollTop";
 const Home = () => {
   return (
     <>
@@ -21,8 +23,8 @@ const Home = () => {
           heroLink="/"
           heroLinktext="Travel Plan"
         />
-        <Destination/>
-        <Trip/>
+        <ScrollTop/>
+        <Homeinfo/>
         <Footer/>
       </div>
     </>
